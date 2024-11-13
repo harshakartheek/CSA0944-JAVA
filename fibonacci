@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class R192210549{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter no.of series:");
+    int n=sc.nextInt();
+    int f1=0,f2=1,nextterm;
+    System.out.println("fibonacci series:"+f1+"\n"+f2);
+    for(int i=2;i<n;i++){
+      nextterm=f1+f2;
+      System.out.println(nextterm);
+      f1=f2;f2=nextterm;
+    }
+    
+  }
+}
